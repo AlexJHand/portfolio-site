@@ -1,0 +1,18 @@
+<section id="viewRepos" class="container">
+    <table class="table table-hover">
+        <caption>Repositories</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date created</th>
+            </tr>
+        </thead>
+        <tbody ng-repeat="repo in rc.repos.data" ng-if="repo.name!='AlexJHand.github.io'">
+            <tr>
+                <td>{{repo.name}}</td>
+                <td>{{repo.created_at | date: 'mediumDate'}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</section>

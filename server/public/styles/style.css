@@ -1,0 +1,52 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+img {
+    width: 80%;
+    height: 40em;
+}
+
+.user {
+    height: 40em;
+    position: relative;
+}
+
+.textDiv {
+    /* line-height: 20em; */
+    position: absolute;
+    top: 30%;
+    bottom: 30%;
+    width: 80%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5em;
+}
+
+#bio {
+    text-align: center;
+    font-size: 3.5em;
+}
+
+#viewRepos {
+    width: 60%;
+}
+
+a {
+    color: inherit;
+}
+
+.iconLinks {
+    margin-top: 50px;
+}
+
+#aboutH1 {
+    text-align: center;
+}
+
+.aboutP {
+    margin-top: 20px;
+    font-size: 20px;
+}

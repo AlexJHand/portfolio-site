@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+    <script src="https://use.fontawesome.com/3146558931.js"></script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+    <script src="scripts/user.controller.js" charset="utf-8"></script>
+    <script src="scripts/repos.controller.js" charset="utf-8"></script>
+    <script src="scripts/github.service.js" charset="utf-8"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="/styles/style.css">
+
+    <link rel="icon" type="image/png" href="favicon-empire.ico">
+
+    <!-- To remove !# in urls -->
+    <base href="/">
+  </head>
+  <body ng-app="myApp">
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsedNav">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="incon-bar"></span>
+              <span class="incon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">
+            </a>
+            <!-- <p class="navbar-text">
+              <strong>Alex Hand</strong>
+            </p> -->
+          </div>
+          <div class="collapse navbar-collapse" id="collapsedNav">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/repos">Repo Info</a>
+              </li>
+              <li>
+                <a href="/about">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main ng-view>
+
+    </main>
+  </body>
+</html>
