@@ -1,7 +1,7 @@
 var myApp = angular.module('myApp', ['ngRoute']);
 
 /// Routes ///
-myApp.config(function($routeProvider, $locationProvider) {
+myApp.config(($routeProvider, $locationProvider) => {
   $locationProvider.hashPrefix('');
 
   $routeProvider.when('/', {
