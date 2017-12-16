@@ -5,13 +5,13 @@ myApp.config(($routeProvider, $locationProvider) => {
   $locationProvider.hashPrefix('');
 
   $routeProvider.when('/', {
-      templateUrl: '/views/user.html',
+      templateUrl: '../views/user.html',
       controller: 'UserController as uc',
     }).when('/repos', {
-      templateUrl: '/views/repos.html',
+      templateUrl: '../views/repos.html',
       controller: 'ReposController as rc'
     }).when('/about', {
-      templateUrl: '/views/about.html',
+      templateUrl: '../views/about.html',
       controller: 'AboutController as ac'  
     }).otherwise('/');
 
