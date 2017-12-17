@@ -7,8 +7,8 @@ myApp.config(($routeProvider, $locationProvider) => {
   $routeProvider.when('/', {
       templateUrl: '../views/user.html',
       controller: 'UserController as uc',
-    }).when('/repos', {
-      templateUrl: '../views/repos.html',
+    }).when('/projects', {
+      templateUrl: '../views/projects.html',
       controller: 'ReposController as rc'
     }).when('/about', {
       templateUrl: '../views/about.html',
