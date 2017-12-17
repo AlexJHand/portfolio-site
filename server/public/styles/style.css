@@ -72,5 +72,17 @@ a {
 }
 
 .cardContainer {
-    padding: 2px 16px;
+    padding: 20px 16px 10px 16px;
+}
+
+.aboutPage {
+    margin-top: 90px;
+}
+
+h4 {
+     display: inline;
+}
+
+.projectLinks {
+    color: royalblue;
 }
