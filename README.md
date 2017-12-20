@@ -16,4 +16,4 @@ Thanks to Font Awesome for the icons and Google for the fonts.
 
 ### Link
 
-[AlexJHand.com](http://www.alexjhand.com)
+[AlexJHand.com](www.alexjhand.com)
