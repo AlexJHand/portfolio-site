@@ -12,14 +12,24 @@ img {
     position: relative;
 }
 
-.navLink {
-    font-size: 27px;
-    width: 280px;
+#navName {
+    font-size: 55px;
+    /* width: 280px; */
     text-align: center;
+}
+
+.navLink {
+    font-size: 20px;
+    width: 120px;
+    text-align: center;
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .navRow {
     padding: 20px;
+    position: relative;
 }
 
 .textDiv {
