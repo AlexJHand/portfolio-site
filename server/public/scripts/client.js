@@ -13,6 +13,9 @@ myApp.config(($routeProvider, $locationProvider) => {
     }).when('/about', {
       templateUrl: '../views/about.html',
       controller: 'AboutController as ac'  
+    }).when('/email', {
+      templateUrl: '../views/email.html',
+      controller: 'EmailController as ec'
     }).otherwise('/');
 
   // For removing !# from urls
