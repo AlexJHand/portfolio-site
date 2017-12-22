@@ -2,7 +2,7 @@ myApp.service('GithubService', function ($http) {
   // Object that will store our user data
   this.user = { data: {} };
 
-  this.postMessage = () => {
-    
+  this.postMessage = (message) => {
+    console.log('In postMessage', message);
   }
 });
