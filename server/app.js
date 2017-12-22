@@ -5,6 +5,7 @@ var app = express();
 var path = require('path');
 var bodyParser = require('body-parser');
 var index = require('./routes/index.router');
+var mail = require('./routes/mail.router')
 require('dotenv').config();
 var port = process.env.PORT || 4500;
 
@@ -16,6 +17,7 @@ var request = require('request');
 app.use(express.static('server/public'));
 
 // Routes
+app.use('/mail', mail);
 app.use('/*', index);
 
 app.listen(port, function () {
