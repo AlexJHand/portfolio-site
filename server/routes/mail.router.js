@@ -42,5 +42,9 @@ const transporter = nodemailer.createTransport({
 // });
 // res.sendStatus(201);
 
+router.post('/', (req, res) => {
+    console.log('In mail.router post', req.body);
+});
+
 // Exports
 module.exports = router;
