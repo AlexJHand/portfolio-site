@@ -20,7 +20,7 @@ const alex = 'alex@alexjhand.com';
 
 // Nodemailer use
 const transporter = nodemailer.createTransport({
-    service: 'smtp.zoho.com',
+    host: 'smtp.zoho.com',
     port: 465,
     secure: true, // use SSL
     auth: {
@@ -44,7 +44,22 @@ const transporter = nodemailer.createTransport({
 
 router.post('/', (req, res) => {
     console.log('In mail.router post', req.body);
-    res.sendStatus(201);
+    let mailConfig = {
+        from: siteCredentials.username,
+        to: alex,
+        subject: req.body.subject,
+        html: '<p>' + req.body.message + '</p>'
+    }
+
+    transporter.sendMail(mailConfig, function (err, info) {
+        if (err) {
+            console.log('sendMail error', err);
+            res.sendStatus(500);
+        } else {
+            console.log('Message sent', info.messageId, info,response);
+            res.sendStatus(201);
+        }
+    })
 });
 
 // Exports
