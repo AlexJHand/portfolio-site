@@ -18,7 +18,7 @@ const siteCredentials = new Credentials(process.env.EMAIL_NAME, process.env.EMAI
 // Alex's email
 const alex = 'alex@alexjhand.com';
 
-// Nodemailer use
+// Create a Nodemailer transporter
 const transporter = nodemailer.createTransport({
     host: 'smtp.zoho.com',
     port: 465,
@@ -28,30 +28,21 @@ const transporter = nodemailer.createTransport({
         pass: siteCredentials.password
     }
 })
-// const mailOptions = {
-//     from: 'mnsenate.mailer@gmail.com',
-//     to: input.senator_email,//sends to correct senator's email
-//     subject: 'Constituent message received',
-//     html: '<p>Message From</p>' + input.name + '<p>That says</p>' + input.comments + '<p>Thank you Senator, you can contact me at</p>' + input.phone + '<p>or</p>' + input.email
 
-// };
-// transporter.sendMail(mailOptions, function (err, info) {
-//     if (err) {
-//         console.log(err, info);
-//     }
-// });
-// res.sendStatus(201);
-
+// Post route
 router.post('/', (req, res) => {
     console.log('In mail.router post', req.body);
+    // Set up the details for the email sent
     let mailConfig = {
         from: siteCredentials.username,
-        to: alex,
+        to: alex + ',' + req.body.email,
         subject: req.body.subject,
         html: '<p>' + req.body.message + '</p>'
     }
 
+    // Send email
     transporter.sendMail(mailConfig, function (err, info) {
+        // If error or success
         if (err) {
             console.log('sendMail error', err);
             res.sendStatus(500);
