@@ -12,6 +12,16 @@ class Credentials {
     }
 }
 
+// Config for email to be sent
+class EmailConfig {
+    constructor(fromAddress, toAddress, subjectText, bodyHTML) {
+        this.from = fromAddress;
+        this.to = toAddress;
+        this.subject = subjectText;
+        this.html = bodyHTML;
+    }
+}
+
 // Class instance to send email from 
 const siteCredentials = new Credentials(process.env.EMAIL_NAME, process.env.EMAIL_PW);
 
@@ -33,12 +43,12 @@ const transporter = nodemailer.createTransport({
 router.post('/', (req, res) => {
     console.log('In mail.router post', req.body);
     // Set up the details for the email sent
-    let mailConfig = {
-        from: siteCredentials.username,
-        to: alex + ',' + req.body.email,
-        subject: req.body.subject,
-        html: '<p>' + req.body.message + '</p>'
-    }
+    let to = alex + ',' + req.body.email;
+    let subject = req.body.subject;
+    let message = '<p>' + req.body.message + '</p>';
+
+    // Create new EmailConfig
+    let mailConfig = new EmailConfig(siteCredentials.username, to, subject, message);
 
     // Send email
     transporter.sendMail(mailConfig, function (err, info) {
