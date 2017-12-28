@@ -1,7 +1,4 @@
-myApp.controller('AboutController', function () {
+myApp.controller('AboutController', function (GithubService) {
     console.log('AboutController loaded.')
-    var vm = this;
-
-    
-
+    const vm = this;
 });

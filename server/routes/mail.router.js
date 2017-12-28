@@ -1,7 +1,7 @@
 // Requires
-var router = require('express').Router();
-var path = require('path');
-var nodemailer = require('nodemailer');
+const router = require('express').Router();
+const path = require('path');
+const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 // Credentials class to send email from

@@ -1,11 +1,11 @@
 // Requires
-var router = require('express').Router();
-var path = require('path');
+const router = require('express').Router();
+const path = require('path');
 
 // Base url get
 router.get('/', function(req, res) {
     console.log('In base url');
-    var indexPath = path.join(__dirname, '../public/index.html');
+    let indexPath = path.join(__dirname, '../public/index.html');
     res.sendFile(indexPath);
 }); // End get
 
