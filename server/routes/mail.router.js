@@ -52,12 +52,14 @@ router.post('/', (req, res) => {
 
     // Send email
     transporter.sendMail(mailConfig, function (err, info) {
+        console.log('In sendMail', info);
+        console.log('Error', err);
         // If error or success
         if (err) {
             console.log('sendMail error', err);
             res.sendStatus(500);
         } else {
-            console.log('Message sent', info.messageId, info,response);
+            console.log('Message sent', info.messageId, info.response);
             res.sendStatus(201);
         }
     })
