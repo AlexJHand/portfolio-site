@@ -1,6 +1,6 @@
 myApp.controller('EmailController', function (GithubService) {
     console.log('EmailController loaded.')
-    var vm = this;
+    const vm = this;
 
     // Message class
     class Message {
