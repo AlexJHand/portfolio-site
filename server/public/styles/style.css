@@ -13,6 +13,7 @@ img {
 }
 
 #navName {
+    font-family: 'Pacifico', cursive;
     font-size: 55px;
     /* width: 280px; */
     text-align: center;

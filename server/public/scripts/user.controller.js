@@ -1,4 +1,4 @@
 myApp.controller('UserController', function (GithubService) {
-  console.log('UserController loaded.')
+  console.log('UserController loaded.');
   const vm = this;
 });
