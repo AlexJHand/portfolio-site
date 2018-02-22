@@ -1,20 +1,30 @@
-#navName {
-    font-family: 'Pacifico', cursive;
-    font-size: 55px;
-    /* width: 280px; */
-    text-align: center;
-}
+.header {
+    font-size: 2.5rem;
+    margin: 1.2rem 0;
 
-.navLink {
-    font-size: 20px;
-    width: 120px;
-    text-align: center;
-    float: right;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+    &__name {
+        font-family: 'Pacifico', cursive;
+        font-size: 6rem;
+        width: 80%;
+        text-align: center;
+    }
 
-.navRow {
-    padding: 20px;
-    position: relative;
+    &__navigation {
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+        padding: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        display: inline-block;
+    }
 }
