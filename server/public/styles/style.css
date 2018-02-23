@@ -98,25 +98,24 @@ h4 {
 .projectLinks {
   color: royalblue; }
 
-img {
-  width: 80%;
-  height: 40em; }
-
 .user {
   height: 40em;
   position: relative; }
-
-.textDiv {
-  /* line-height: 20em; */
-  position: absolute;
-  top: 15%;
-  bottom: 30%;
-  width: 80%; }
-
-#bio {
-  text-align: center;
-  font-size: 3.5em; }
-
-.iconLinks {
-  margin-top: 50px;
-  text-align: center; }
+  .user__img {
+    height: 50rem; }
+  .user__text {
+    position: absolute;
+    top: 30%; }
+  .user__bio {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400; }
+  .user__links {
+    margin-top: 50px;
+    text-align: center;
+    display: inline-block;
+    list-style: none; }
+  .user__icon {
+    display: inline-block;
+    padding: 2rem;
+    font-size: 1.5rem; }
