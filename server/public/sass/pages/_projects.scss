@@ -1,11 +1,16 @@
 .projects {
-    width: 60%;
-}
+    margin-top: 3rem;
 
-#viewRepos {
-    width: 1200px;
-}
+    &__item {
+        display: block;
+        margin: auto;
+        
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+    }
 
-.projectLinks {
-    color: royalblue;
+    &__links {
+        color: royalblue;
+    }
 }
