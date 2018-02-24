@@ -1,7 +1,16 @@
-h2 {
+.heading-primary {
+    font-family: 'Pacifico', cursive;
+    font-size: 6rem;
+    width: 80%;
     text-align: center;
-    font-size: 5em;
 }
+
+.heading-secondary {
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
 
 a {
     color: inherit;
