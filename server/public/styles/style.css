@@ -49,7 +49,8 @@ a {
   text-decoration: none; }
 
 h4 {
-  display: inline; }
+  display: inline;
+  font-size: 1.8rem; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -67,7 +68,7 @@ h4 {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
 
-.btn:active, .btn:focus {
+.btn:active {
   outline: none;
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
@@ -209,7 +210,8 @@ h4 {
     cursor: pointer; }
 
 .projects {
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  font-size: 1.5rem; }
   .projects__item {
     display: block;
     margin: auto; }

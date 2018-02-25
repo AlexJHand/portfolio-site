@@ -47,7 +47,7 @@
 
     </main>
 
-    <div class="email" id="email">
+    <div class="email" id="email" ng-controller="EmailController as ec">
         <div class="email__content">
           <h3 class="heading-secondary">Send A Message</h3>
           <a href="/" class="email__close">&times;</a>
@@ -65,7 +65,8 @@
                 <label for="emailBody" class="form__label">Message</label>
                 <textarea required id="emailBody" placeholder="message" class="form__input" rows="10" ng-model="ec.message" name="body"></textarea>
               </div>
-              <button type="submit" class="btn" ng-click="ec.sendMessage()">Submit</button>
+              <!-- <button type="submit" class="btn" ng-click="ec.sendMessage()">Submit</button> -->
+              <button type="submit" class="btn">Submit</button>
             </form>
           </div>
         </div>

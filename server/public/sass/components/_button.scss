@@ -19,10 +19,13 @@
         box-shadow: 0 1rem 2rem rgba(black, .15);
     }
     
-    &:active,
-    &:focus {
+    // &:active,
+    // &:focus {
+    &:active {
         outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba(black, .2);
     }
+
+   
 }
