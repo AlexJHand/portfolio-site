@@ -13,8 +13,8 @@ body {
 
 .heading-primary {
   font-family: 'Pacifico', cursive;
-  font-size: 6rem;
-  width: 80%;
+  font-size: 6.5rem;
+  width: 100%;
   text-align: center; }
 
 .heading-secondary {
@@ -38,7 +38,8 @@ h4 {
   transition: all .2s;
   position: relative;
   font-size: 1.8rem;
-  background-color: lightgray;
+  color: white;
+  background-color: black;
   cursor: pointer;
   outline: none;
   transform: translateY(-3px);
@@ -109,7 +110,9 @@ h4 {
   margin: 1.2rem 0; }
   .header__navigation {
     padding-top: 2rem;
-    display: inline-block; }
+    display: inline-block;
+    width: 75%;
+    margin-left: 25%; }
   .header__list {
     list-style: none; }
   .header__item {
