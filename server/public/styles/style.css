@@ -1,3 +1,25 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 *,
 *::after,
 *::before {
@@ -107,7 +129,11 @@ h4 {
 
 .header {
   font-size: 2.5rem;
-  margin: 1.2rem 0; }
+  margin: 1.2rem 0;
+  animation-name: moveInDown;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: backwards; }
   .header__navigation {
     padding-top: 2rem;
     display: inline-block;
@@ -143,19 +169,22 @@ h4 {
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
   transition: all .3s; }
   .email__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 70%;
     padding: 1.5rem;
     background-color: white;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     overflow: hidden;
     opacity: 1;
+    transform: translate(-50%, -50%) scale(0.5);
     transition: all .4s .2s; }
   .email__form {
     width: 90%;
@@ -163,6 +192,9 @@ h4 {
   .email:target {
     opacity: 1;
     visibility: visible; }
+  .email:target .email__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
   .email__close:link, .email__close:visited {
     color: black;
     position: absolute;
@@ -188,10 +220,16 @@ h4 {
   height: 40em;
   position: relative; }
   .user__img {
-    height: 50rem; }
+    height: 50rem;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards; }
   .user__text {
     position: absolute;
-    top: 30%; }
+    top: 30%;
+    animation-name: moveInRight;
+    animation-duration: 2s; }
   .user__links {
     margin-top: 50px;
     text-align: center;

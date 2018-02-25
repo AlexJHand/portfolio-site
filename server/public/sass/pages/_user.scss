@@ -4,11 +4,17 @@
 
     &__img {
         height: 50rem;
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
     }
 
     &__text {
         position: absolute;
         top: 30%;
+        animation-name: moveInRight;
+        animation-duration: 2s;
     }
 
     &__links {
