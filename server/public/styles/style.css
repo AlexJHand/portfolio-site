@@ -215,6 +215,46 @@ h4 {
   .projects__item {
     display: block;
     margin: auto; }
+  .projects__item-display {
+    height: 50rem;
+    background-image: url("../images/social_drinker/social_drinker.png");
+    background-size: contain; }
+  .projects__item-left {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    top: 22rem;
+    z-index: 1000;
+    background-color: black; }
+    .projects__item-left:hover {
+      cursor: pointer;
+      background-color: white; }
+  .projects__item-right {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    top: 22rem;
+    left: 91.6rem;
+    z-index: 1000;
+    background-color: black; }
+    .projects__item-right:hover {
+      cursor: pointer;
+      background-color: white; }
+  .projects__item-left:hover > .projects__item-cursor {
+    color: black; }
+  .projects__item-right:hover > .projects__item-cursor {
+    color: black; }
+  .projects__item-cursor {
+    position: relative;
+    top: .4rem;
+    color: white;
+    background-color: transparent; }
   .projects__links {
     color: royalblue; }
 
