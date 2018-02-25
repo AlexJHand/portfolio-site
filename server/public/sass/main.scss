@@ -2,12 +2,14 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "components/card";
-
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
+
+@import "components/button";
+@import "components/card";
+@import "components/form";
 
 @import "layout/footer";
 @import "layout/grid";
@@ -15,6 +17,7 @@
 @import "layout/navigation";
 
 @import "pages/about";
+@import "pages/email";
 @import "pages/home";
 @import "pages/projects";
 @import "pages/user";

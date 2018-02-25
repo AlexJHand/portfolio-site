@@ -17,7 +17,12 @@ myApp.controller('EmailController', function (GithubService) {
         // New message to be sent
         vm.newMessage = new Message(vm.email, vm.subject, vm.message);
         console.log('Message to be sent', vm.newMessage);
-        GithubService.postMessage(vm.newMessage);
+        if (vm.email != undefined && vm.subject != undefined && vm.message != undefined) {
+            GithubService.postMessage(vm.newMessage);    
+        } else {
+            console.log("Form not completed, message not sent.");
+        }
+        
 
     }
 
