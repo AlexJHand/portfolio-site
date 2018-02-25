@@ -37,7 +37,7 @@
             <ul class="header__list">
               <li class="header__item"><a href="/projects" class="header__link">Projects</a></li>
               <li class="header__item"><a href="/about" class="header__link">About</a></li>
-              <li class="header__item"><a href="" class="header__link">Contact</a></li>
+              <li class="header__item"><a href="#email" class="header__link">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -46,5 +46,33 @@
     <main ng-view>
 
     </main>
+
+    <div class="email">
+      <!-- <div class="card"> -->
+        <!-- <div class="cardContainer"> -->
+        <div class="email__content">
+          <h3 class="heading-secondary">Send A Message</h3>
+          <a href="#" class="email__close">&times;</a>
+          <div class="email__form">
+            <form class="form">
+              <div class="form__group">
+                <label for="guestEmail" class="form__label">Email</label>
+                <input type="email" autofocus required id="guestEmail" placeholder="email" class="form__input" ng-model="ec.email" name="mail">
+              </div>
+              <div class="form__group">
+                <label for="emailSubject" class="form__label">Subject</label>
+                <input type="text" required id="emailSubject" placeholder="subject" class="form__input" ng-model="ec.subject" name="subject">
+              </div>
+              <div class="form__group">
+                <label for="emailBody" class="form__label">Message</label>
+                <textarea required id="emailBody" placeholder="message" class="form__input" rows="10" ng-model="ec.message" name="body"></textarea>
+              </div>
+              <button type="submit" class="btn" ng-click="ec.sendMessage()">Submit</button>
+            </form>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+
   </body>
 </html>
