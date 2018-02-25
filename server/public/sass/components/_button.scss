@@ -12,15 +12,12 @@
         font-size: 1.8rem;
         color: white;
         background-color: black;
-        // background-color: lightgray;
         cursor: pointer;
         outline: none;
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba(black, .15);
     }
     
-    // &:active,
-    // &:focus {
     &:active {
         outline: none;
         transform: translateY(-1px);
