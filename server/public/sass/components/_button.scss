@@ -12,7 +12,15 @@
         font-size: 1.8rem;
         background-color: lightgray;
         cursor: pointer;
+        outline: none;
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(black, .15);
     }
     
-    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba(black, .2);
+    }
 }

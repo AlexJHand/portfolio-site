@@ -39,7 +39,15 @@ h4 {
   position: relative;
   font-size: 1.8rem;
   background-color: lightgray;
-  cursor: pointer; }
+  cursor: pointer;
+  outline: none;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15); }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .card {
   width: 100rem;

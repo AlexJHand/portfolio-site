@@ -22,8 +22,6 @@ myApp.controller('EmailController', function (GithubService) {
         } else {
             console.log("Form not completed, message not sent.");
         }
-        
-
     }
 
 });
