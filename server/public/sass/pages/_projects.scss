@@ -10,22 +10,15 @@
     &__item-display {
         height: 50rem;
         // background-image: url("../images/social_drinker/social_drinker.png");
-        background-size: contain;
+        // background-size: contain;
+        // position: relative;
     }
 
     &__radio-input {
         display: none !important;
     }
 
-    // &__radio-input:checked, #login {
-    //     display: block;
-    // }
-
-    // &__radio-input:not(:checked), #sd {
-    //     display: none;
-    // }
-
-    &__radio-input:checked + &__item-group {
+    &__radio-input:checked + &__item-slide + &__item-group {
         display: block;
     }
 
@@ -33,21 +26,68 @@
         display: none;
     }
 
+    &__item-group {
+        position: relative;
+    }
+
+    // &__radio-label {
+    //     display: inline-block;
+    //     position: relative;
+    //     background-color: orangered;
+    //     // height: 0rem;
+    // }
+
+    // &__item-left {
+    //     display: inline-block;
+    //     position: absolute;
+    //     text-align: center;
+    //     width: 4rem;
+    //     height: 4rem;
+    //     font-size: 3rem;
+    //     top: 22rem;  
+    //     z-index: 1000;
+    //     background-color: black;
+
+    //     &:hover {
+    //         cursor: pointer;
+    //         background-color: white;
+    //     }
+    // }
+
+    // &__item-right {
+    //     display: inline-block;
+    //     position: absolute;
+    //     text-align: center;
+    //     width: 4rem;
+    //     height: 4rem;
+    //     font-size: 3rem;
+    //     top: 22rem;
+    //     left: 91.6rem;
+    //     z-index: 1000;
+    //     background-color: black;
+        
+    //     &:hover {
+    //         cursor: pointer;
+    //         background-color: white;
+    //     }
+    // }
+
     &__radio-label {
         display: inline-block;
+        position: absolute;
+        background-color: orangered; // height: 0rem;
     }
 
     &__item-left {
         display: inline-block;
-        position: relative;
+        position: absolute;
         text-align: center;
         width: 4rem;
         height: 4rem;
         font-size: 3rem;
-        top: 22rem;  
+        top: 25rem;
         z-index: 1000;
         background-color: black;
-
         &:hover {
             cursor: pointer;
             background-color: white;
@@ -56,16 +96,16 @@
 
     &__item-right {
         display: inline-block;
-        position: relative;
+        position: absolute;
         text-align: center;
         width: 4rem;
         height: 4rem;
         font-size: 3rem;
-        top: 22rem;
-        left: 91.6rem;
+        top: 25rem;
+        // left: 100%;
+        right: 0px;
         z-index: 1000;
         background-color: black;
-        
         &:hover {
             cursor: pointer;
             background-color: white;
@@ -87,32 +127,16 @@
         background-color: transparent;   
     }
 
+    &__item-slide {
+        // height: 100%;
+        // top: -2rem; 
+        width: 100%;
+        position: relative;
+        // background-size: contain;
+    }
 
     &__links {
         color: royalblue;
     }
 }
 
-// #login {
-//     display: displayOrHide(one);
-// }
-
-// #sd {
-//     display: displayOrHide(two);
-// }
-
-// #login, projects__radio-input:checked {
-//     display: block;
-// }
-
-// #login, projects__radio-input:not(checked) {
-//     display: none;
-// }
-
-// #sd, projects__radio-input:checked {
-//     display: block;
-// }
-
-// #sd, projects__radio-input:not(:checked) {
-//     display: none;
-// }

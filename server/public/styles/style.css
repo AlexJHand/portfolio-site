@@ -216,24 +216,27 @@ h4 {
     display: block;
     margin: auto; }
   .projects__item-display {
-    height: 50rem;
-    background-size: contain; }
+    height: 50rem; }
   .projects__radio-input {
     display: none !important; }
-  .projects__radio-input:checked + .projects__item-group {
+  .projects__radio-input:checked + .projects__item-slide + .projects__item-group {
     display: block; }
   .projects__radio-input:not(:checked) + .projects__item-group {
     display: none; }
+  .projects__item-group {
+    position: relative; }
   .projects__radio-label {
-    display: inline-block; }
+    display: inline-block;
+    position: absolute;
+    background-color: orangered; }
   .projects__item-left {
     display: inline-block;
-    position: relative;
+    position: absolute;
     text-align: center;
     width: 4rem;
     height: 4rem;
     font-size: 3rem;
-    top: 22rem;
+    top: 25rem;
     z-index: 1000;
     background-color: black; }
     .projects__item-left:hover {
@@ -241,13 +244,13 @@ h4 {
       background-color: white; }
   .projects__item-right {
     display: inline-block;
-    position: relative;
+    position: absolute;
     text-align: center;
     width: 4rem;
     height: 4rem;
     font-size: 3rem;
-    top: 22rem;
-    left: 91.6rem;
+    top: 25rem;
+    right: 0px;
     z-index: 1000;
     background-color: black; }
     .projects__item-right:hover {
@@ -262,6 +265,9 @@ h4 {
     top: .4rem;
     color: white;
     background-color: transparent; }
+  .projects__item-slide {
+    width: 100%;
+    position: relative; }
   .projects__links {
     color: royalblue; }
 
