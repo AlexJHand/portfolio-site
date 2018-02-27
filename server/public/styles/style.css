@@ -227,8 +227,7 @@ h4 {
     position: relative; }
   .projects__radio-label {
     display: inline-block;
-    position: absolute;
-    background-color: orangered; }
+    position: absolute; }
   .projects__item-left {
     display: inline-block;
     position: absolute;
@@ -238,7 +237,8 @@ h4 {
     font-size: 3rem;
     top: 25rem;
     z-index: 1000;
-    background-color: black; }
+    background-color: black;
+    opacity: .5; }
     .projects__item-left:hover {
       cursor: pointer;
       background-color: white; }
@@ -252,7 +252,8 @@ h4 {
     top: 25rem;
     right: 0px;
     z-index: 1000;
-    background-color: black; }
+    background-color: black;
+    opacity: .5; }
     .projects__item-right:hover {
       cursor: pointer;
       background-color: white; }
