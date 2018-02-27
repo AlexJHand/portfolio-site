@@ -64,8 +64,6 @@
     
     <div class="projects__item">
         <div class="card">
-            <!-- <img src="../images/mcm.png" alt="Minnesota Missing Children" style="width: 100%"> -->
-
             <div class="projects__item-display">
 
                 <input checked type="radio" class="projects__radio-input" id="mcmOne" name="mcm">
@@ -137,23 +135,52 @@
         </div>
     </div>
     
-    <div class="card">
-        <img src="../images/blog.png" alt="Blog" style="width: 100%">
-        <div class="cardContainer">
-            <h4><b>Blog</b></h4><span> - </span><a class="projects__links" href="https://github.com/AlexJHand/Blog">Link</a>
-            <p>A simple MEAN stack blog.</p>
-            <h4><b>Technologies Used</b></h4>
-            <p>HTML5, CSS3, AngularJS, NodeJS, Express, and MongoDB.</p>
+    <div class="projects__item">
+        <div class="card">
+            <img src="../images/blog.png" alt="Blog" style="width: 100%">
+            <div class="cardContainer">
+                <h4><b>Blog</b></h4><span> - </span><a class="projects__links" href="https://github.com/AlexJHand/Blog">Link</a>
+                <p>A simple MEAN stack blog.</p>
+                <h4><b>Technologies Used</b></h4>
+                <p>HTML5, CSS3, AngularJS, NodeJS, Express, and MongoDB.</p>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <img src="../images/photo_gallery.png" alt="Photo Gallery" style="width: 100%">
-        <div class="cardContainer">
-            <h4><b>Photo Gallery Assignment</b></h4><span> - </span><a class="projects__links" href="https://github.com/AlexJHand/Photo-Gallery-Assignment">Link</a>
-            <p>[Prime Week 4 Assignment] This application is a display of significant photos and related comments from my life and lets
-            users select whether or not they "like" each photo.</p>
-            <h4><b>Technologies Used</b></h4>
-            <p>HTML5, CSS3, AngularJS, NodeJS, Express, and Bootstrap.</p>
+
+    <div class="projects__item">
+        <div class="card">
+            <!-- <img src="../images/photo_gallery.png" alt="Photo Gallery" style="width: 100%"> -->
+            <div class="projects__item-display">
+
+                <input checked type="radio" class="projects__radio-input" id="galleryOne" name="gallery">
+                <div class="projects__item-group" id="galleryMain">
+                    <img class="projects__item-slide" src="../images/photo_gallery/galleryMain.png" alt="Gallery Main">
+                    <label for="galleryTwo" class="projects__radio-label projects__item-left">
+                        <div class="projects__item-cursor">&#10094;</div>
+                    </label>
+                    <label for="galleryTwo" class="projects__radio-label projects__item-right">
+                        <div class="projects__item-cursor">&#10095;</div>
+                    </label>
+                </div>
+                <input type="radio" class="projects__radio-input" id="galleryTwo" name="gallery">
+                <div class="projects__item-group" id="galleryMain">
+                    <img class="projects__item-slide" src="../images/photo_gallery/galleryDescriptions.png" alt="Gallery Descriptions">
+                    <label for="galleryOne" class="projects__radio-label projects__item-left">
+                        <div class="projects__item-cursor">&#10094;</div>
+                    </label>
+                    <label for="galleryOne" class="projects__radio-label projects__item-right">
+                        <div class="projects__item-cursor">&#10095;</div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="cardContainer">
+                <h4><b>Photo Gallery Assignment</b></h4><span> - </span><a class="projects__links" href="https://github.com/AlexJHand/Photo-Gallery-Assignment">Link</a>
+                <p>[Prime Week 4 Assignment] This application is a display of significant photos and related comments from my life and lets
+                users select whether or not they "like" each photo.</p>
+                <h4><b>Technologies Used</b></h4>
+                <p>HTML5, CSS3, AngularJS, NodeJS, Express, and Bootstrap.</p>
+            </div>
         </div>
     </div>
 </div>
