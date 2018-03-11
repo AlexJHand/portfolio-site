@@ -8,6 +8,11 @@
         animation-duration: 1s;
         animation-delay: 1s;
         animation-fill-mode: backwards;
+
+        // @include respond(tab-port) {
+        //     width: 100%;
+        //     display: block;
+        // }
     }
 
     &__text {
@@ -15,6 +20,11 @@
         top: 30%;
         animation-name: moveInRight;
         animation-duration: 2s;
+
+        @include respond(tab-port) {
+            // position: relative;
+            background-color: orangered;
+        }
     }
 
     &__links {
