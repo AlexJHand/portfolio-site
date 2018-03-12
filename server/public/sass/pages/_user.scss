@@ -2,22 +2,16 @@
     height: 40em;
     position: relative;
 
+    @include respond(tab-land) {
+        padding: 2%;
+    }
+
     &__img {
         height: 50rem;
         animation-name: fadeIn;
         animation-duration: 1s;
         animation-delay: 1s;
         animation-fill-mode: backwards;
-
-        // @include respond(tab-port) {
-        //     width: 100%;
-        //     display: block;
-        // }
-
-        // @include respond(tab-land) {
-        //     // width: 100%;
-        //     margin: auto;
-        // }
     }
 
     &__text {
@@ -27,18 +21,13 @@
         animation-duration: 2s;
 
         @include respond(tab-port) {
-            // position: relative;
-            // background-color: orangered;
+            position: relative;
+            background-color: orangered;
         }
 
-        @include respond(tab-land) {
-            // width: 100%;
-            // margin: auto;
-            // display: block;
-            // margin-left: 2rem;
-            // background-color: orangered;
-            position: relative;
-        }
+        // @include respond(tab-land) {
+        //     position: relative;
+        // }
     }
 
     &__links {
@@ -52,9 +41,5 @@
         display: inline-block;
         padding: 2rem;
         font-size: 1.5rem;
-    }
-
-    @include respond(tab-land) {
-        padding: 2%;
     }
 }

@@ -62,10 +62,15 @@
                 <label for="emailBody" class="form__label">Message</label>
                 <textarea required id="emailBody" placeholder="message" class="form__input" rows="10" ng-model="ec.message" name="body"></textarea>
               </div>
-              <button type="submit" class="btn" ng-click="ec.sendMessage()">Submit</button>
+              <button type="submit" class="btn" ng-click="ec.sendMessage()"><a href="#email__success">Submit</a></button>
             </form>
           </div>
         </div>
+    </div>
+
+    <div class="email__success">
+      <div class="email__success-text">Your message was sent!</div>
+      <div class="btn email__success-button">Close</div>
     </div>
 
   </body>
