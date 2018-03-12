@@ -128,13 +128,21 @@ h4 {
     content: "";
     display: table;
     clear: both; }
+  @media (max-width: 75em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 75em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 6rem; } }
     @media (max-width: 75em) {
       .row [class^="col-"] {
-        float: none; } }
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -306,9 +314,9 @@ h4 {
     top: 30%;
     animation-name: moveInRight;
     animation-duration: 2s; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 75em) {
       .user__text {
-        background-color: orangered; } }
+        position: relative; } }
   .user__links {
     margin-top: 50px;
     text-align: center;

@@ -13,6 +13,11 @@
         //     width: 100%;
         //     display: block;
         // }
+
+        // @include respond(tab-land) {
+        //     // width: 100%;
+        //     margin: auto;
+        // }
     }
 
     &__text {
@@ -23,7 +28,16 @@
 
         @include respond(tab-port) {
             // position: relative;
-            background-color: orangered;
+            // background-color: orangered;
+        }
+
+        @include respond(tab-land) {
+            // width: 100%;
+            // margin: auto;
+            // display: block;
+            // margin-left: 2rem;
+            // background-color: orangered;
+            position: relative;
         }
     }
 
