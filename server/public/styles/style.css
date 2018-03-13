@@ -245,9 +245,38 @@ h4 {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
+    z-index: 9998;
     opacity: 0;
     visibility: hidden;
+    transition: all .3s; }
+  .email__success {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15%;
+    width: 30%;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all .4s .2s; }
+  .email__success:target {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1); }
+  .email__success-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    transform: translate(28%, 20%); }
+  .email__success-button {
+    margin-top: 2rem;
+    left: 35%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
     transition: all .3s; }
 
 .projects {
