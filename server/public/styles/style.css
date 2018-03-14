@@ -129,11 +129,10 @@ h4 {
     content: "";
     display: table;
     clear: both; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 75em) {
     .row {
-      max-width: 30rem;
-      padding: 0 3rem;
-      background-color: orangered; } }
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
@@ -142,9 +141,6 @@ h4 {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
-    @media (max-width: 56.25em) {
-      .row [class^="col-"] {
-        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
@@ -238,17 +234,6 @@ h4 {
   .email__close:hover {
     color: gray;
     cursor: pointer; }
-  .email__button {
-    height: 20%;
-    width: 20%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9998;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .3s; }
   .email__success {
     position: absolute;
     top: 50%;
@@ -276,8 +261,7 @@ h4 {
     margin-top: 2rem;
     left: 35%;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-    transition: all .3s; }
+    z-index: 9999; }
 
 .projects {
   margin-top: 3rem;
@@ -359,10 +343,9 @@ h4 {
     top: 30%;
     animation-name: moveInRight;
     animation-duration: 2s; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 75em) {
       .user__text {
-        position: relative;
-        background-color: orangered; } }
+        position: relative; } }
   .user__links {
     margin-top: 50px;
     text-align: center;

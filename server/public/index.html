@@ -49,7 +49,7 @@
           <h3 class="heading-secondary">Send A Message</h3>
           <a href="#" class="email__close">&times;</a>
           <div class="email__form">
-            <form class="form">
+            <form class="form" action="#success">
               <div class="form__group">
                 <label for="guestEmail" class="form__label">Your Email Address</label>
                 <input type="email" autofocus required id="guestEmail" placeholder="email" class="form__input" ng-model="ec.email" name="mail">
@@ -62,7 +62,8 @@
                 <label for="emailBody" class="form__label">Message</label>
                 <textarea required id="emailBody" placeholder="message" class="form__input" rows="10" ng-model="ec.message" name="body"></textarea>
               </div>
-              <button type="submit" class="btn" ng-click="ec.sendMessage()"><a href="#success">Submit</a></button>
+              <!-- <button type="submit" class="btn" ng-click="ec.sendMessage()"><a href="#success" class="email__button">Submit</a></button> -->
+              <button type="submit" class="btn" ng-click="ec.sendMessage()">Submit</button>
             </form>
           </div>
         </div>
