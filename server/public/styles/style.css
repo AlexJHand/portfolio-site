@@ -193,6 +193,9 @@ h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media (max-width: 75em) {
+      .about__text {
+        transform: translate(-50%, 10%); } }
   .about__item {
     margin-top: 2rem; }
 
