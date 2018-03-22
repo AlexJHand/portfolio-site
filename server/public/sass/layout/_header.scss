@@ -11,6 +11,11 @@
         display: inline-block;
         width: 75%;
         margin-left: 25%;
+
+        @include respond(tab-land) {
+            width: 100%;
+            margin-left: 10%;
+        }
     }
 
     &__list {
