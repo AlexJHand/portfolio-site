@@ -184,11 +184,13 @@ h4 {
 
 .about {
   margin-top: 90px; }
-  @media (max-width: 75em) {
-    .about__heading {
-      display: block;
-      height: 12rem;
-      margin-bottom: 1rem; } }
+  .about__heading {
+    margin-bottom: 6rem; }
+    @media (max-width: 75em) {
+      .about__heading {
+        display: block;
+        height: 12rem;
+        margin-bottom: 1rem; } }
   .about__text {
     width: 60%;
     margin-top: 4rem;
