@@ -20,11 +20,6 @@
         animation-name: moveInRight;
         animation-duration: 2s;
 
-        // @include respond(tab-port) {
-        //     position: relative;
-        //     background-color: orangered;
-        // }
-
         @include respond(tab-land) {
             position: relative;
         }
