@@ -96,6 +96,9 @@ h4 {
   transition: 0.3s;
   margin: auto;
   margin-bottom: 5rem; }
+  @media (max-width: 75em) {
+    .card {
+      width: 80rem; } }
   .card:hover {
     box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2); }
 

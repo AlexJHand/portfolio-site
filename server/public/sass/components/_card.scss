@@ -5,6 +5,12 @@
     margin: auto;
     margin-bottom: 5rem;
 
+    @include respond(tab-land) {
+        width: 80rem;
+        // margin-left: 5rem; 
+        // margin-right: 5rem;
+    }
+
     &:hover {
         box-shadow: 0 .8rem 1.6rem 0 rgba(0, 0, 0, 0.2);
     }

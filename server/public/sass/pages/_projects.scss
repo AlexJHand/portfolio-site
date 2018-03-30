@@ -5,6 +5,12 @@
     &__item {
         display: block;
         margin: auto;  
+
+        // @include respond(tab-land) {
+        //     width: 80rem;
+        //     margin-left: 5rem;
+        //     // margin-right: 5rem;
+        // }
     }
 
     &__item-display {
