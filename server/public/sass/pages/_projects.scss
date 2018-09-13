@@ -92,6 +92,10 @@
     &__item-slide {
         width: 100%;
         position: relative;
+
+        @include respond(tab-land) {
+            height: 100% !important;
+        }
     }
 
     &__links {

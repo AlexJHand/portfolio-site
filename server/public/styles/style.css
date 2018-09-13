@@ -343,6 +343,9 @@ h4 {
   .projects__item-slide {
     width: 100%;
     position: relative; }
+    @media (max-width: 75em) {
+      .projects__item-slide {
+        height: 100% !important; } }
   .projects__links {
     color: royalblue; }
 
